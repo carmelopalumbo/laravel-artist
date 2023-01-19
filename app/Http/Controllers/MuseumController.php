@@ -19,12 +19,13 @@ class MuseumController extends Controller
         return view('museums.index', compact('museums', 'direction'));
     }
 
-    public function orderby($column, $direction){
+    /* public function orderby($column, $direction)
+    {
         $direction = $direction === 'desc' ? 'asc' : 'desc';
         $museums = Museum::orderBy($column, $direction)->paginate(8);
 
         return view('museums.index', compact('direction', 'museums'));
-    }
+    }*/
 
     /**
      * Show the form for creating a new resource.

@@ -1,6 +1,6 @@
 <?php
 
-
+use App\Http\Controllers\ArtworkController;
 use App\Http\Controllers\MuseumController;
 use App\Http\Controllers\ArtistController;
 use Illuminate\Support\Facades\Route;
@@ -24,4 +24,3 @@ Route::resource('artist', ArtistController::class);
 Route::resource('museums', MuseumController::class);
 
 Route::resource('artwork', ArtworkController::class);
-
