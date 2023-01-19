@@ -8,6 +8,10 @@
     <!-- Fonts -->
     <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.css'
+        integrity='sha512-FA9cIbtlP61W0PRtX36P6CGRy0vZs0C2Uw26Q1cMmj3xwhftftymr0sj8/YeezDnRwL9wtWw8ZwtCiTDXlXGjQ=='
+        crossorigin='anonymous' />
+
     <!-- Styles -->
     @vite('resources/js/app.js')
 
@@ -16,7 +20,9 @@
 
 <body>
     <div class="artist bg-dark">
-        <h1 class="text-center py-5">ARTIST CRUD</h1>
+        <h1 class="text-center py-5 fw-bolder">
+            <a class="text-white text-decoration-none" href="{{ route('artist.index') }}">ARTISTS CRUD</a>
+        </h1>
         @yield('content')
     </div>
 </body>
