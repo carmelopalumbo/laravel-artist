@@ -1,8 +1,9 @@
 <?php
 
-use App\Http\Controllers\MuseumController;
-use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\MuseumController;
+use App\Http\Controllers\ArtistController;
+use Illuminate\Support\Facades\Route;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,5 +19,9 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::resource('artist', ArtistController::class);
 
 Route::resource('museums', MuseumController::class);
+
+Route::resource('artwork', ArtworkController::class);
+
