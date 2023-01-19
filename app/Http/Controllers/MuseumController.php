@@ -54,9 +54,10 @@ class MuseumController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($slug)
     {
-        //
+        $museum = Museum::where('slug', $slug)->first();
+        return view('museums.show', compact('museum'));
     }
 
     /**
