@@ -20,7 +20,9 @@
 
 <body>
     <div class="artist bg-dark">
-        <h1 class="text-center py-5">ARTIST CRUD</h1>
+        <h1 class="text-center py-5 fw-bolder">
+            <a class="text-white text-decoration-none" href="{{ route('artist.index') }}">ARTISTS CRUD</a>
+        </h1>
         @yield('content')
     </div>
 </body>

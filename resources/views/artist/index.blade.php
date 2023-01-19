@@ -16,7 +16,7 @@
                         <th scope="row">{{ $artist->id }}</th>
                         <td>{{ $artist->name }}</td>
                         <td>
-                            <a class="btn btn-primary" href="">
+                            <a class="btn btn-primary" href="{{ route('artist.show', $artist) }}">
                                 <i class="fa-solid fa-eye"></i>
                             </a>
                             <a class="btn btn-warning mx-2" href="">
