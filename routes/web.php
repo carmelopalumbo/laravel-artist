@@ -1,8 +1,8 @@
 <?php
 
+
 use App\Http\Controllers\ArtistController;
 use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
