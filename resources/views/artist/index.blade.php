@@ -2,6 +2,7 @@
 
 @section('content')
     <div class="container">
+        <a class="btn btn-info my-4" href="{{ route('artist.create') }}">AGGIUNGI ARTISTA</a>
         <table class="table text-white">
             <thead>
                 <tr>
