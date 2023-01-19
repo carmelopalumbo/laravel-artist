@@ -19,8 +19,9 @@
     <main class="bg-dark d-flex justify-content-center align-items-center flex-column">
         <div class="links">
             <h1 class="text-center py-5 text-white">CRUD</h1>
-            <a class="btn btn-info mx-3 fw-bold" href="">ARTIST CRUD</a>
-            <a class="btn btn-success fw-bold" href="">ARTOWORKS CRUD</a>
+            <a class="btn btn-info fw-bold" href="">ARTIST CRUD</a>
+            <a class="btn btn-success fw-bold mx-3" href="">ARTWORKS CRUD</a>
+            <a class="btn btn-warning fw-bold" href="">MUSEUM CRUD</a>
         </div>
     </main>
 </body>
