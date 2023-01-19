@@ -19,3 +19,4 @@ Route::get('/', function () {
 });
 
 
+Route::resource('museums', MuseumController::class);
