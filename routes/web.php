@@ -19,3 +19,7 @@ Route::get('/', function () {
 });
 
 Route::resource('artist', ArtistController::class);
+
+Route::resource('museums', MuseumController::class);
+
+Route::resource('artist', ArtworkController::class);
