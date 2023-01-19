@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Artwork;
 use Illuminate\Http\Request;
 
 class ArtworkController extends Controller
@@ -13,7 +14,8 @@ class ArtworkController extends Controller
      */
     public function index()
     {
-        return view('artworks.index');
+        $all_artworks = Artwork::paginate(5);
+        return view('artworks.index', compact('all_artworks'));
     }
 
     /**
