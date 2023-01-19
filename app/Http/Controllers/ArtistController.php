@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Artist;
 use Illuminate\Http\Request;
 
 class ArtistController extends Controller
@@ -13,8 +14,8 @@ class ArtistController extends Controller
      */
     public function index()
     {
-
-        return view('artist.index');
+        $artists = Artist::orderBy('name')->paginate(5);
+        return view('artist.index', compact('artists'));
     }
 
     /**
